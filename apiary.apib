@@ -1,9 +1,55 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: http://fastighetsstyrning.smhi.se/ws/enloss
 
 # SMHI Fastighet
 
-Polls is a simple API allowing consumers to view polls and vote in them.
+This is the technical documentation of the API provided by SMHI for customers to request e.g. energy statistics
+and equivalent temperature forecasts for buildings and properties.
+
+Please visit [SMHI - Fastighet](https://www.smhi.se/professionella-tjanster/professionella-tjanster/fastighet) 
+ (*in swedish*) for more information about the products and services we provide.
+ 
+## Documentation Outline
+The API endpoint is **http://fastighetsstyrning.smhi.se/ws/enloss** which is the root for all requests.
+Real requests are made by providing additional parameters via the URL and authentication info via headers.
+
+## Authentication
+As a subscriber to this API you should have received a customer id, subscription id and a password. These three
+parts must be formatted in a certain way and put into the header **key** for the request to be considered valid.
+
+Customer id should be an 8 character integer with leading 0s. Subscription id is a simple integer and a customer
+can have one or more subscription ids, one for each subscription. Password is a simple string.
+
+The required format of the **key** header is **customer id:subscription id:md5sum** where **md5sum** is the
+md5sum of "today's date (YYYY-MM-DD):password".
+
+For a customer with a customer id 00001234, subscription id 1337 and password foobarbaz, the header **key**
+should be (on 2018-10-08):
+*00001234:1337:md5("2018-10-08:foobarbaz")* -> 
+*00001234:1337:26b20a669930b8f49491a03f5e0e3c8c*
+
+## Headers
+bla bla
+
+## Places
+bla bla
+
+## Products
+bla bla
+
+## Historical Requests
+bla bla
+
+## Error Handling
+bla bla
+
+## Code Examples
+
+### Python
+
+### Java
+
+### C#
 
 ## Questions Collection [/questions]
 
