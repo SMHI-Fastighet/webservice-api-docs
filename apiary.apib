@@ -9,33 +9,95 @@ and equivalent temperature forecasts for buildings and properties.
 Please visit [SMHI - Fastighet](https://www.smhi.se/professionella-tjanster/professionella-tjanster/fastighet) 
  (*in swedish*) for more information about the products and services we provide.
  
-## Documentation Outline
+## Basic Information
 The API endpoint is **http://fastighetsstyrning.smhi.se/ws/enloss** which is the root for all requests.
 Real requests are made by providing additional parameters via the URL and authentication info via headers.
 
+The full endpoint is **http://fastighetsstyrning.smhi.se/ws/enloss/*\<place\>*/*\<product\>*/*\<typecase\>*/*\<date\>***,
+where ***\<place\>*** and ***\<product\>*** are required. ***\<typecase\>*** is only required for some products and 
+***\<date\>*** is optional and specifies a date from which data are returned.
+
+All parameters and headers are described in the sections below.
+
 ## Authentication
-As a subscriber to this API you should have received a customer id, subscription id and a password. These three
+As a subscriber to the API you should have received a customer id, subscription id and a password. These three
 parts must be formatted in a certain way and put into the header **key** for the request to be considered valid.
 
-Customer id should be an 8 character integer with leading 0s. Subscription id is a simple integer and a customer
-can have one or more subscription ids, one for each subscription. Password is a simple string.
+Customer id should be an 8 character integer with leading 0s. Subscription id is an integer and a customer
+can have one or more subscription ids, one for each subscription. Password is a string.
 
 The required format of the **key** header is **customer id:subscription id:md5sum** where **md5sum** is the
 md5sum of "today's date (YYYY-MM-DD):password".
 
 For a customer with a customer id 00001234, subscription id 1337 and password foobarbaz, the header **key**
 should be (on 2018-10-08):
-*00001234:1337:md5("2018-10-08:foobarbaz")* -> 
-*00001234:1337:26b20a669930b8f49491a03f5e0e3c8c*
+
+    *00001234:1337:md5("2018-10-08:foobarbaz")*
+    
+which computes to:
+
+    *00001234:1337:26b20a669930b8f49491a03f5e0e3c8c*
 
 ## Headers
-bla bla
+Two headers as key-value pairs are required.
+|Key|Description|
+|---|-----------|
+|accept|Specifies which data structure the returned data will be in. Currently only "application/json" is supported and the header can be hard coded to this.|
+|key|See the Authentication section|
 
 ## Places
-bla bla
+Each request to the API is a request for data at a specific place. A place is identified with a 
+6 digit number. The first 3 digits is the country identification and the last 3 is a unique number for each
+place available. Currently only places in Sweden are available meaning that the first 3 digits should be 102.
+Some products are based on forecasts and they requires the first digit to be 5. In this case the first 3
+digits should be 502. The Products section describes which products that are based on forecasts and thus
+requires the country code 502, instead of the normal 102.
+
+For a complete list of the available places, see **HÄR SAKNAS EN LISTA MED MAPPNING MOT PLACENUMBER**.
+
+## Typecases
+A typecase is a representation of a specific building and its surroundings which is used in models
+by SMHI to calculate some products. A typecase is represented by an id which is an integer. See the Products
+section for the products that requires a typecase.
 
 ## Products
-bla bla
+Data for multiple products are available in the API and they are found in the table below. The Product short
+name is used as a parameter in the URL to specify requested product.
+
+As described in the Places section, some products based on forecasts requires the country code in the place
+number to be 502 and this can also be seen in the table.
+
+Some products requires a typecase as described in the Typecases section and this information is found in the
+table as well.
+
+|Product|Product short name|Requires country code 502|Requires typecase|
+|-------|------------------|-------------------------|-----------------|
+|Graddagar Monthly|MonthlyDD / GDmanad|NO|NO|
+|Graddagar Daily|DailyDD / GDdygn|NO|YES|
+|Energiindex Monthly|MonthlyEI / EImanad|NO|NO|
+|Energiindex Daily|DailyEI / EIdygn|NO|YES|
+|Kylindex Monthly|MonthlyKI / KImanad|NO|YES|
+|Kylindex Daily|DailyKI / KIdygn|NO|YES|
+|Kylindex Hourly|HourlyKI / KItimme|NO|YES|
+|Ekvivalenttemperatur Daily|DailyET / ETdygn|NO|NO|
+|Ekvivalenttemperatur for Forecast Control|ETFast|YES|YES|
+|Ekvivalenttemperatur Forecasts|ETProg|YES|YES|
+|Ekvivalenttemperatur Observations|ETObs|NO|YES|
+
+The table below specifies which typecases that are available for the products that requires a typecase.
+|Product short name|Available typecases|
+|------------------|-------------------|
+|DailyDD / GDdygn|105|
+|DailyEI / EIdygn|105|
+|MonthlyKI / KImanad|1011, 1012, 1013, 1014|
+|DailyKI / KIdygn|1011, 1012, 1013, 1014|
+|HourlyKI / KItimme|1011, 1012, 1013, 1014|
+|ETFast|*|
+|ETProg|105|
+|ETObs|105|
+
+\* *This product has too many available typecases to show in a table. Contact SMHI Fastighet for a complete
+list and for more information.*
 
 ## Historical Requests
 bla bla
@@ -51,7 +113,7 @@ bla bla
 
 ### C#
 
-## Questions Collection [/questions]
+## Basic Requests [/place/product]
 
 ### List All Questions [GET]
 
