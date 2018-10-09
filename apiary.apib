@@ -100,14 +100,74 @@ The table below specifies which typecases that are available for the products th
 list and for more information.*
 
 ## Historical Requests
-bla bla
+Normally requests shall be made without the \<date\> parameter and this will return the latest valid values,
+e.g. data for the latest month depending on the specified product. New customers may need to populate internal
+databases with history and this can be made with historical requests.
+
+Historical requests are made by specifying the \<date\> parameter on the form YYYY-MM-DDTHHmmSSZ and values
+will be returned from that date to the latest valid date. E.g. the date
+
+The date from which a customer is allowed to get data from is regulated by the subscription and there may
+also be a limit to how many times historical requests can be made.
 
 ## Error Handling
-bla bla
+The API attempts to return appropriate HTTP status codes for every request.
+A 2xx status code indicates success, whereas a 4xx or 5xx status code indicates an error.
+
+Currently these status codes can be returned
+|Status Code|Name|Description|
+|-----------|----|-----------|
+|200|Success|The request was successful and data is returned.|
+|204|No Content|The request was successful but no content was found. This can be due to an invalid combination of the request parameters.|
+|401|Unauthorized|Authentication was refused and a customer and subscription with the specified key could not be found. Check that the key header really is correct.|
+|403|Forbidden|Authentication was successful but the customer does not have access to the requested data.|
+|404|Not Found|URL not found|
+|500|Internal Server Error|Something in the request could not be processed. Check the raised exception for details.|
+
 
 ## Code Examples
+Below are some basic code examples that demonstrates minimal examples to get data from the API.
 
 ### Python
+```
+from __future__ import print_function
+
+def get_smhi_data(customerid, subscriptionid, password, place, product, typecase=None, date=None):
+    """Minimal python function to get data from the API."""
+    import requests
+    import hashlib
+    import time
+    
+    # Create the headers
+    today = time.strftime("%Y-%m-%d")
+    md5 = hashlib.md5()
+    md5.update("{0}:{1}".format(today, password))
+    key = "{0}:{1}:{2}".format(customerid, subscriptionid, md5.hexdigest())
+    
+    accept = "application/json"
+    
+    headers = {"key": key, "accept": accept}
+    
+    # Create the URL
+    url = "http://fastighetsstyrning.smhi.se/ws/enloss/{0}/{1}".format(place, product)
+    
+    if typecase is not None:
+        url = "/".join([url, typecase])
+    
+    if date is not None:
+        url = "/".join([url, date])
+        
+    # Perform request to API
+    response = requests.get(url, headers=headers)
+    
+    if response.status_code != 200:
+        # Not successful or no content
+        print(response.json())
+        return None
+        
+    else:
+        return response.json()
+```
 
 ### Java
 
@@ -115,7 +175,7 @@ bla bla
 
 ## Basic Requests [/place/product]
 
-### List All Questions [GET]
+### Place and Product [GET]
 
 + Response 200 (application/json)
 
@@ -140,49 +200,3 @@ bla bla
                 ]
             }
         ]
-
-### Create a New Question [POST]
-
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
-
-+ Request (application/json)
-
-        {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
-        }
-
-+ Response 201 (application/json)
-
-    + Headers
-
-            Location: /questions/2
-
-    + Body
-
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
-                    }
-                ]
-            }
