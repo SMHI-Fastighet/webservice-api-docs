@@ -104,8 +104,9 @@ Normally requests shall be made without the \<date\> parameter and this will ret
 e.g. data for the latest month depending on the specified product. New customers may need to populate internal
 databases with history and this can be made with historical requests.
 
-Historical requests are made by specifying the \<date\> parameter on the form YYYY-MM-DDTHHmmSSZ and values
-will be returned from that date to the latest valid date. E.g. the date
+Historical requests are made by specifying the \<date\> parameter on the form YYYYmmddTHHMMSSZ and values
+will be returned from that date to the latest valid date. E.g. the date 2018-02-15 12:00:00 translates to the
+format 20180215T120000Z.
 
 The date from which a customer is allowed to get data from is regulated by the subscription and there may
 also be a limit to how many times historical requests can be made.
