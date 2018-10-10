@@ -259,7 +259,8 @@ This is a request with products that requires a typecase.
 This is requests for historical data. The <code>typecase</code> parameter can be omitted if the requested product does
 not require a typecase.
 
-These requests are not meant to be called multiple times, only
+These requests are not meant to be called multiple times, only as a way to populate internal databases or
+something similar.
 
 ### Place, Product, (Typecase) and Date[GET]
 + Parameters
@@ -267,7 +268,7 @@ These requests are not meant to be called multiple times, only
     + place: 102612 (required, integer) - The id of the place to get data for
     + product: DailyEI (required, string) - The short name of the product to get data for
     + typecase: 105 (optional, string) - The id of the typecase to get data for
-    + date: 20181005T000000Z (optional, string) - The date to get data from
+    + date: 20181001T000000Z (optional, string) - The date to get data from
     
 
 + Request
@@ -294,6 +295,26 @@ These requests are not meant to be called multiple times, only
             "issuedate": "2018-10-10 02:00:00",
             "issuer": "SMHI",
             "data": [
+                [
+                    "2018-10-01",
+                    -999,
+                    -999
+                ],
+                [
+                    "2018-10-02",
+                    -999,
+                    -999
+                ],
+                [
+                    "2018-10-03",
+                    -999,
+                    -999
+                ],
+                [
+                    "2018-10-04",
+                    -999,
+                    -999
+                ],
                 [
                     "2018-10-05",
                     -999,
