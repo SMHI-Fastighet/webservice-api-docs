@@ -48,7 +48,7 @@ Two headers as key-value pairs are required.
 ## Places
 Each request to the API is a request for data at a specific place. A place is identified with a 
 6 digit number. The first 3 digits is the country identification and the last 3 is a unique number for each
-place available. Currently only places in Sweden are available meaning that the first 3 digits should be 102.
+place available. Currently only places in Sweden are available and its country code is 102.
 Some products are based on forecasts and they requires the first digit to be 5. In this case the first 3
 digits should be 502. The Products section describes which products that are based on forecasts and thus
 requires the country code 502, instead of the normal 102.
@@ -57,8 +57,7 @@ For a complete list of the available places, see **HÄR SAKNAS EN LISTA MED MAPP
 
 ## Typecases
 A typecase is a representation of a specific building and its surroundings which is used in models
-by SMHI to calculate some products. A typecase is represented by an id which is an integer. See the Products
-section for the products that requires a typecase.
+by SMHI. A typecase is represented by an id. See the Products section for the products that requires a typecase.
 
 ## Products
 Data for multiple products are available in the API and they are found in the table below. The Product short
