@@ -115,7 +115,7 @@ The table below specifies which typecases that are available for the products th
 |HourlyKI / KItimme|1011, 1012, 1013, 1014|
 |ETFast|*|
 
-\* *This product has too many available typecases to show in a table. Contact SMHI Fastighet for a complete
+\* *This product has too many available typecases to show in a table. Contact SMHI Real Estate for a complete
 list and for more information.*
 
 ## Historical Requests
@@ -131,13 +131,35 @@ The date from which a customer is allowed to get data from is regulated by the s
 also be a limit to how many times historical requests can be made.
 
 ## Returned Body
-Data is returned in json format with both metadata and the values for the product. Two important json attributes
-are <code>dataDescription</code> and <code>data</code>. <code>dataDescription</code> are the parameter names
-for the values in <code>data</code>. It is important that <code>dataDescription</code> is evaluated **every 
-request** since it is not guaranteed that the parameters in the <code>data</code> attribute will always come
-in the same order.
+Data is returned in json format with both metadata and the values for the product. A response has the format
+```
+{
+    "placeName": <place name: string>,
+    "projection": <projection: string,
+    "lon": <place longitude: floating point>,
+    "lat": <place latitude: floating point>,
+    "placeId": <place number: integer>,
+    "timezone": <timezone: string,
+    "dataDescription": [
+        <array with data column headers: strings>
+    ],
+    "issuedate": <describes when data was created: string>,
+    "issuer": <issuer of the data: string>,
+    "data": [
+        [
+            <arrays with data with as many columns as fields in dataDescription: _>
+        ]
+    ],
+    "product": <requested product: string>
+}
+```
 
-The examples below demonstrates how the returned json format looks like.
+The two most important json attributes are <code>dataDescription</code> and <code>data</code>.
+It is important that <code>dataDescription</code> is evaluated **every 
+request** to get the order of the data since it is not guaranteed that the parameters in the
+<code>data</code> attribute will always come in the same order.
+
+The examples below further demonstrates how the returned json format looks like.
 
 ## Error Handling
 The API attempts to return appropriate HTTP status codes for every request.
