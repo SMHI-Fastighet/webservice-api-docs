@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: http://fastighetsstyrning.smhi.se/ws/enloss
+HOST: https://fastighetsstyrning.smhi.se/ws/enloss
 
 # SMHI Real Estate
 
@@ -10,10 +10,10 @@ Please visit [SMHI - Real Estate](https://www.smhi.se/professionella-tjanster/pr
  (*in swedish*) for more information about the products and services we provide.
  
 ## Basic Information
-The API endpoint is **http://fastighetsstyrning.smhi.se/ws/enloss** which is the root for all requests.
+The API endpoint is **https://fastighetsstyrning.smhi.se/ws/enloss** which is the root for all requests.
 Real requests are made by providing additional parameters via the URL and authentication info via headers.
 
-The full endpoint is **http://fastighetsstyrning.smhi.se/ws/enloss/*\<place\>*/*\<product\>*/*\<typecase\>*/*\<date\>***,
+The full endpoint is **https://fastighetsstyrning.smhi.se/ws/enloss/*\<place\>*/*\<product\>*/*\<typecase\>*/*\<date\>***,
 where ***\<place\>*** and ***\<product\>*** are required. ***\<typecase\>*** is only required for some products and 
 ***\<date\>*** is optional and specifies a date from which data are returned.
 
@@ -162,7 +162,7 @@ request** to get the order of the data since it is not guaranteed that the param
 The examples below further demonstrates how the returned json format looks like.
 
 ## Error Handling
-The API attempts to return appropriate HTTP status codes for every request.
+The API attempts to return appropriate status codes for every request.
 A 2xx status code indicates success, whereas a 4xx or 5xx status code indicates an error.
 
 Currently these status codes can be returned
