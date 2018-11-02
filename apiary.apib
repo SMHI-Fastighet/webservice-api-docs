@@ -139,7 +139,7 @@ Data is returned in json format with both metadata and the values for the produc
     "lon": <place longitude: floating point>,
     "lat": <place latitude: floating point>,
     "placeId": <place number: integer>,
-    "timezone": <timezone: string,
+    "timezone": <timezone: string>,
     "dataDescription": [
         <array with data column headers: strings>
     ],
@@ -231,7 +231,7 @@ This is a request with products that requires a typecase.
 
     + place: 102612 (required, integer) - The id of the place to get data for
     + product: DailyEI (required, string) - The short name of the product to get data for
-    + typecase: 105 (optional, string) - The id of the typecase to get data for
+    + typecase: 105 (optional, integer) - The id of the typecase to get data for
     
 
 + Request
@@ -309,7 +309,7 @@ something similar.
 
     + place: 102612 (required, integer) - The id of the place to get data for
     + product: DailyEI (required, string) - The short name of the product to get data for
-    + typecase: 105 (optional, string) - The id of the typecase to get data for
+    + typecase: 105 (optional, integer) - The id of the typecase to get data for
     + date: 20181001T000000Z (optional, string) - The date to get data from
     
 
