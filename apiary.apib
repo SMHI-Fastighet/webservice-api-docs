@@ -119,9 +119,9 @@ The table below specifies which typecases that are available for the products th
 list and for more information.*
 
 ## Historical Requests
-Normally requests shall be made without the \<date\> parameter and this will return the latest valid values,
-e.g. data for the latest month depending on the specified product. New customers may need to populate internal
-databases with history and this can be made with historical requests.
+Using the API without the \<date\> parameter will always get the latest valid values returned.
+It is possible to get historical values by specifying a date from which values will be returned.
+Note that historical requests may be slower than normal requests.
 
 Historical requests are made by specifying the \<date\> parameter on the form YYYYmmddTHHMMSSZ and values
 will be returned from that date to the latest valid date. E.g. the date 2018-02-15 12:00:00 translates to the
@@ -300,9 +300,6 @@ This is a request with products that requires a typecase.
 # Historical Requests [/{place}/{product}/{typecase}/{date}]
 This is requests for historical data. The <code>typecase</code> parameter can be omitted if the requested product does
 not require a typecase.
-
-These requests are not meant to be called multiple times, only as a way to populate internal databases or
-something similar.
 
 ### Place, Product, (Typecase) and Date[GET]
 + Parameters
