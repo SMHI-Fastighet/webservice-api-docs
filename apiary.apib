@@ -69,40 +69,53 @@ number to be 502 and this can also be seen in the table.
 Some products requires a typecase as described in the Typecases section and this information is found in the
 table as well.
 
+As described in the Historical Requests section, it is possible to request historical values for some products.
+The possible products are found in the tables below.
+
 ### SMHI Energy-Index and Heating Degree Days Monthly Values
 This product requires two requests to the API, one for the Energy-Index and one for the Heating Degree Days.
 
-|Product short name|Requires country code 502|Requires typecase|
-|------------------|-------------------------|-----------------|
-|MonthlyDD / GDmanad|NO|NO|
-|MonthlyEI / EImanad|NO|NO|
+|Product short name|Requires country code 502|Requires typecase|Has historical values|
+|------------------|-------------------------|-----------------|---------------------|
+|MonthlyDD / GDmanad|NO|NO|YES|
+|MonthlyEI / EImanad|NO|NO|YES|
 
 ### SMHI Energy-Index and Heating Degree Days Daily Values
 This product requires two requests to the API, one for the Energy-Index and one for the Heating Degree Days.
-|Product short name|Requires country code 502|Requires typecase|
-|------------------|-------------------------|-----------------|
-|DailyDD / GDdygn|NO|YES|
-|DailyEI / EIdygn|NO|YES|
+|Product short name|Requires country code 502|Requires typecase|Has historical values|
+|------------------|-------------------------|-----------------|---------------------|
+|DailyDD / GDdygn|NO|YES|YES|
+|DailyEI / EIdygn|NO|YES|YES|
 
 ### SMHI Cooling-Index Monthly Values
-|Product short name|Requires country code 502|Requires typecase|
-|------------------|-------------------------|-----------------|
-|MonthlyKI / KImanad|NO|YES|
+|Product short name|Requires country code 502|Requires typecase|Has historical values|
+|------------------|-------------------------|-----------------|---------------------|
+|MonthlyKI / KImanad|NO|YES|YES|
 
 ### SMHI Cooling-Index Daily Values
-|Product short name|Requires country code 502|Requires typecase|
-|------------------|-------------------------|-----------------|
-|DailyKI / KIdygn|NO|YES|
+|Product short name|Requires country code 502|Requires typecase|Has historical values|
+|------------------|-------------------------|-----------------|---------------------|
+|DailyKI / KIdygn|NO|YES|YES|
 
 ### SMHI Cooling-Index Hourly Values
-|Product short name|Requires country code 502|Requires typecase|
-|------------------|-------------------------|-----------------|
-|HourlyKI / KItimme|NO|YES|
+|Product short name|Requires country code 502|Requires typecase|Has historical values|
+|------------------|-------------------------|-----------------|---------------------|
+|HourlyKI / KItimme|NO|YES|NO|
+
+### Mean Temperature Daily Values
+|Product short name|Requires country code 502|Requires typecase|Has historical values|
+|------------------|-------------------------|-----------------|---------------------|
+|DailyTT / TTdygn|NO|NO|YES|
+
+### Temperature Hourly Values
+|Product short name|Requires country code 502|Requires typecase|Has historical values|
+|------------------|-------------------------|-----------------|---------------------|
+|HourlyTT / TTtimme|NO|NO|NO|
 
 ### SMHI Equivalent Temperature Forecast Control
-|Product short name|Requires country code 502|Requires typecase|
-|------------------|-------------------------|-----------------|
-|ETFast|YES|YES|
+|Product short name|Requires country code 502|Requires typecase|Has historical values|
+|------------------|-------------------------|-----------------|---------------------|
+|ETFast|YES|YES|NO|
 
 ### Available Typecases
 The table below specifies which typecases that are available for the products that requires a typecase.
