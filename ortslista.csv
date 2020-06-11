@@ -1,0 +1,311 @@
+Ortsnummer;Ortsnamn;Kommunnamn;Länsnamn;Region
+102118;Karlshamn;Karlshamn;Blekinge;1
+102120;Karlskrona;Karlskrona;Blekinge;1
+102116;Olofström;Olofström;Blekinge;1
+102119;Ronneby;Ronneby;Blekinge;1
+102115;Sölvesborg;Sölvesborg;Blekinge;1
+102128;Bjuv;Bjuv;Skåne;1
+102130;Broby;Östra Göinge;Skåne;1
+102114;Bromölla;Bromölla;Skåne;1
+102138;Burlöv;Burlöv;Skåne;1
+102132;Båstad;Båstad;Skåne;1
+102107;Eslöv;Eslöv;Skåne;1
+102121;Falsterbo;Vellinge;Skåne;1
+102109;Helsingborg;Helsingborg;Skåne;1
+102112;Hässleholm;Hässleholm;Skåne;1
+102129;Höganäs;Höganäs;Skåne;1
+102125;Hörby;Hörby;Skåne;1
+102127;Höör;Höör;Skåne;1
+102110;Klippan;Klippan;Skåne;1
+102113;Kristianstad;Kristianstad;Skåne;1
+102124;Kävlinge;Kävlinge;Skåne;1
+102108;Landskrona;Landskrona;Skåne;1
+102135;Lomma;Lomma;Skåne;1
+102106;Lund;Lund;Skåne;1
+102105;Malmö;Malmö;Skåne;1
+102117;Osby;Osby;Skåne;1
+102139;Perstorp;Perstorp;Skåne;1
+102103;Simrishamn;Simrishamn;Skåne;1
+102104;Sjöbo;Sjöbo;Skåne;1
+102137;Skurup;Skurup;Skåne;1
+102136;Staffanstorp;Staffanstorp;Skåne;1
+102126;Svalöv;Svalöv;Skåne;1
+102122;Svedala;Svedala;Skåne;1
+102123;Tomelilla;Tomelilla;Skåne;1
+102101;Trelleborg;Trelleborg;Skåne;1
+102102;Ystad;Ystad;Skåne;1
+102140;Åstorp;Åstorp;Skåne;1
+102111;Ängelholm;Ängelholm;Skåne;1
+102131;Örkelljunga;Örkelljunga;Skåne;1
+102313;Falkenberg;Falkenberg;Hallands;2
+102302;Halmstad;Halmstad;Hallands;2
+102316;Hyltebruk;Hylte;Hallands;2
+102315;Kungsbacka;Kungsbacka;Hallands;2
+102301;Laholm;Laholm;Hallands;2
+102231;Ullared;Falkenberg;Hallands;2
+102314;Varberg;Varberg;Hallands;2
+102252;Ale;Ale;Västra Götalands;2
+102204;Alingsås;Alingsås;Västra Götalands;2
+102223;Bengtsfors;Bengtsfors;Västra Götalands;2
+102243;Bollebygd;Bollebygd;Västra Götalands;2
+102206;Borås;Borås;Västra Götalands;2
+102222;Ed;Dals-Ed;Västra Götalands;2
+102244;Essunga;Essunga;Västra Götalands;2
+102215;Falköping;Falköping;Västra Götalands;2
+102249;Färgelanda;Färgelanda;Västra Götalands;2
+102248;Grästorp;Grästorp;Västra Götalands;2
+102201;Göteborg;Göteborg;Västra Götalands;2
+102519;Götene;Götene;Västra Götalands;2
+102232;Herrljunga;Herrljunga;Västra Götalands;2
+102217;Hjo;Hjo;Västra Götalands;2
+102524;Hova;Gullspång;Västra Götalands;2
+102254;Härryda;Härryda;Västra Götalands;2
+102218;Karlsborg;Karlsborg;Västra Götalands;2
+102205;Kinna;Mark;Västra Götalands;2
+102202;Kungälv;Kungälv;Västra Götalands;2
+102203;Lerum;Lerum;Västra Götalands;2
+102213;Lidköping;Lidköping;Västra Götalands;2
+102253;LillaEdet;Lilla Edet;Västra Götalands;2
+102209;Lysekil;Lysekil;Västra Götalands;2
+102219;Mariestad;Mariestad;Västra Götalands;2
+102220;Mellerud;Mellerud;Västra Götalands;2
+102234;Munkedal;Munkedal;Västra Götalands;2
+102242;Mölndal;Mölndal;Västra Götalands;2
+102240;Orust;Orust;Västra Götalands;2
+102238;Partille;Partille;Västra Götalands;2
+102214;Skara;Skara;Västra Götalands;2
+102216;Skövde;Skövde;Västra Götalands;2
+102235;Sotenäs;Sotenäs;Västra Götalands;2
+102208;Stenungsund;Stenungsund;Västra Götalands;2
+102221;Strömstad;Strömstad;Västra Götalands;2
+102245;Svenljunga;Svenljunga;Västra Götalands;2
+102518;Såtenäs;Lidköping;Västra Götalands;2
+102247;Tanum;Tanum;Västra Götalands;2
+102241;Tibro;Tibro;Västra Götalands;2
+102251;Tidaholm;Tidaholm;Västra Götalands;2
+102237;Tjörn;Tjörn;Västra Götalands;2
+102250;Tranemo;Tranemo;Västra Götalands;2
+102212;Trollhättan;Trollhättan;Västra Götalands;2
+102239;Töreboda;Töreboda;Västra Götalands;2
+102210;Uddevalla;Uddevalla;Västra Götalands;2
+102207;Ulricehamn;Ulricehamn;Västra Götalands;2
+102523;Vara;Vara;Västra Götalands;2
+102246;Vårgårda;Vårgårda;Västra Götalands;2
+102211;Vänersborg;Vänersborg;Västra Götalands;2
+102224;Åmål;Åmål;Västra Götalands;2
+102236;Öckerö;Öckerö;Västra Götalands;2
+102331;Hemse;Gotland;Gotlands;3
+102330;Visby;Gotland;Gotlands;3
+102343;Aneby;Aneby;Jönköpings;3
+102322;Eksjö;Eksjö;Jönköpings;3
+102317;Gislaved;Gislaved;Jönköpings;3
+102344;Gnosjö;Gnosjö;Jönköpings;3
+102345;Habo;Habo;Jönköpings;3
+102320;Jönköping;Jönköping;Jönköpings;3
+102342;Mullsjö;Mullsjö;Jönköpings;3
+102321;Nässjö;Nässjö;Jönköpings;3
+102334;Sävsjö;Sävsjö;Jönköpings;3
+102328;Tranås;Tranås;Jönköpings;3
+102319;Vaggeryd;Vaggeryd;Jönköpings;3
+102323;Vetlanda;Vetlanda;Jönköpings;3
+102318;Värnamo;Värnamo;Jönköpings;3
+102308;Borgholm;Borgholm;Kalmar;3
+102341;Emmaboda;Emmaboda;Kalmar;3
+102326;Hultsfred;Hultsfred;Kalmar;3
+102340;Högsby;Högsby;Kalmar;3
+102307;Kalmar;Kalmar;Kalmar;3
+102333;Mönsterås;Mönsterås;Kalmar;3
+102339;Mörbylånga;Mörbylånga;Kalmar;3
+102309;Nybro;Nybro;Kalmar;3
+102325;Oskarshamn;Oskarshamn;Kalmar;3
+102306;Torsås;Torsås;Kalmar;3
+102327;Vimmerby;Vimmerby;Kalmar;3
+102329;Västervik;Västervik;Kalmar;3
+102332;Alvesta;Alvesta;Kronobergs;3
+102310;Lessebo;Lessebo;Kronobergs;3
+102312;Ljungby;Ljungby;Kronobergs;3
+102303;Markaryd;Markaryd;Kronobergs;3
+102305;Tingsryd;Tingsryd;Kronobergs;3
+102311;Växjö;Växjö;Kronobergs;3
+102324;Åseda;Uppvidinge;Kronobergs;3
+102304;Älmhult;Älmhult;Kronobergs;3
+102417;Eskilstuna;Eskilstuna;Södermanlands;4
+102412;Flen;Flen;Södermanlands;4
+102419;Gnesta;Gnesta;Södermanlands;4
+102411;Katrineholm;Katrineholm;Södermanlands;4
+102413;Nyköping;Nyköping;Södermanlands;4
+102414;Oxelösund;Oxelösund;Södermanlands;4
+102416;Strängnäs;Strängnäs;Södermanlands;4
+102415;Trosa;Trosa;Södermanlands;4
+102410;Vingåker;Vingåker;Södermanlands;4
+102408;Finspång;Finspång;Östergötlands;4
+102403;Kisa;Kinda;Östergötlands;4
+102406;Linköping;Linköping;Östergötlands;4
+102420;Malexander;Boxholm;Östergötlands;4
+102402;Mjölby;Mjölby;Östergötlands;4
+102407;Motala;Motala;Östergötlands;4
+102409;Norrköping;Norrköping;Östergötlands;4
+102421;Söderköping;Söderköping;Östergötlands;4
+102418;Vadstena;Vadstena;Östergötlands;4
+102405;Valdermarsvik;Valdemarsvik;Östergötlands;4
+102422;Ydre;Ydre;Östergötlands;4
+102404;Åtvidaberg;Åtvidaberg;Östergötlands;4
+102401;Ödeshög;Ödeshög;Östergötlands;4
+102503;Arvika;Arvika;Värmlands;5
+102521;Charlottenberg;Eda;Värmlands;5
+102509;Filipstad;Filipstad;Värmlands;5
+102528;Forshaga;Forshaga;Värmlands;5
+102535;Grums;Grums;Värmlands;5
+102506;Hagfors;Hagfors;Värmlands;5
+102525;Hammarö;Hammarö;Värmlands;5
+102507;Karlstad;Karlstad;Värmlands;5
+102520;Kil;Kil;Värmlands;5
+102508;Kristinehamn;Kristinehamn;Värmlands;5
+102527;Munkfors;Munkfors;Värmlands;5
+102534;Storfors;Storfors;Värmlands;5
+102504;Sunne;Sunne;Värmlands;5
+102502;Säffle;Säffle;Värmlands;5
+102505;Torsby;Torsby;Värmlands;5
+102501;Årjäng;Årjäng;Värmlands;5
+102522;Östmark;Torsby;Värmlands;5
+102512;Askersund;Askersund;Örebro;5
+102532;Degerfors;Degerfors;Örebro;5
+102530;Hallsberg;Hallsberg;Örebro;5
+102531;Hällefors;Hällefors;Örebro;5
+102510;Karlskoga;Karlskoga;Örebro;5
+102516;Kopparberg;Ljusnarsberg;Örebro;5
+102513;Kumla;Kumla;Örebro;5
+102511;Laxå;Laxå;Örebro;5
+102529;Lekeberg;Lekeberg;Örebro;5
+102515;Lindesberg;Lindesberg;Örebro;5
+102533;Nora;Nora;Örebro;5
+102514;Örebro;Örebro;Örebro;5
+102627;Adelsö;Ekerö;Stockholms;6
+102623;Botkyrka;Botkyrka;Stockholms;6
+102646;Danderyd;Danderyd;Stockholms;6
+102610;Haninge;Haninge;Stockholms;6
+102624;Huddinge;Huddinge;Stockholms;6
+102626;Järfälla;Järfälla;Stockholms;6
+102647;Lidingö;Lidingö;Stockholms;6
+102615;Märsta;Sigtuna;Stockholms;6
+102648;Nacka;Nacka;Stockholms;6
+102616;Norrtälje;Norrtälje;Stockholms;6
+102645;Nykvarn;Nykvarn;Stockholms;6
+102609;Nynäshamn;Nynäshamn;Stockholms;6
+102643;Salem;Salem;Stockholms;6
+102642;Sigtuna;Sigtuna;Stockholms;6
+102628;Sollentuna;Sollentuna;Stockholms;6
+102641;Solna;Solna;Stockholms;6
+102612;Stockholm;Stockholm;Stockholms;6
+102613;Stockholm-Bromma;Stockholm;Stockholms;6
+102640;Sundbyberg;Sundbyberg;Stockholms;6
+102608;Södertälje;Södertälje;Stockholms;6
+102611;Tyresö;Tyresö;Stockholms;6
+102629;Täby;Täby;Stockholms;6
+102607;Upplands-Bro;Upplands-Bro;Stockholms;6
+102639;Upplands-Väsby;Upplands Väsby;Stockholms;6
+102649;Vallentuna;Vallentuna;Stockholms;6
+102644;Vaxholm;Vaxholm;Stockholms;6
+102625;Värmdö;Värmdö;Stockholms;6
+102614;Österåker;Österåker;Stockholms;6
+102606;Enköping;Enköping;Uppsala;6
+102631;Films Kyrkby;Östhammar;Uppsala;6
+102637;Håbo;Håbo;Uppsala;6
+102638;Knivsta;Knivsta;Uppsala;6
+102630;Skutskär;Älvkarleby;Uppsala;6
+102619;Tierp;Tierp;Uppsala;6
+102618;Tärnsjö;Heby;Uppsala;6
+102617;Uppsala;Uppsala;Uppsala;6
+102620;Östhammar;Östhammar;Uppsala;6
+102601;Arboga;Arboga;Västmanlands;6
+102603;Fagersta;Fagersta;Västmanlands;6
+102634;Hallstahammar;Hallstahammar;Västmanlands;6
+102633;Kungsör;Kungsör;Västmanlands;6
+102602;Köping;Köping;Västmanlands;6
+102632;Norberg;Norberg;Västmanlands;6
+102604;Sala;Sala;Västmanlands;6
+102635;Skinnskatteberg;Skinnskatteberg;Västmanlands;6
+102636;Surahammar;Surahammar;Västmanlands;6
+102605;Västerås;Västerås;Västmanlands;6
+102702;Avesta;Avesta;Dalarnas;7
+102707;Borlänge;Borlänge;Dalarnas;7
+102708;Falun;Falun;Dalarnas;7
+102725;Gagnef;Gagnef;Dalarnas;7
+102722;Hedemora;Hedemora;Dalarnas;7
+102706;Leksand;Leksand;Dalarnas;7
+102701;Ludvika;Ludvika;Dalarnas;7
+102704;Malung;Malung;Dalarnas;7
+102716;Mora;Mora;Dalarnas;7
+102727;Orsa;Orsa;Dalarnas;7
+102723;Rättvik;Rättvik;Dalarnas;7
+102726;Smedjebacken;Smedjebacken;Dalarnas;7
+102714;Sälen-Högfjällshotell;Malung;Dalarnas;7
+102713;Särna;Älvdalen;Dalarnas;7
+102703;Säter;Säter;Dalarnas;7
+102705;Vansbro;Vansbro;Dalarnas;7
+102715;Älvdalen;Älvdalen;Dalarnas;7
+102718;Bollnäs;Bollnäs;Gävleborgs;7
+102724;Delsbo;Hudiksvall;Gävleborgs;7
+102717;Edsbyn;Ovanåker;Gävleborgs;7
+102711;Gävle;Gävle;Gävleborgs;7
+102709;Hofors;Hofors;Gävleborgs;7
+102720;Hudiksvall;Hudiksvall;Gävleborgs;7
+102721;Ljusdal;Ljusdal;Gävleborgs;7
+102728;Nordanstig;Nordanstig;Gävleborgs;7
+102712;Ockelbo;Ockelbo;Gävleborgs;7
+102710;Sandviken;Sandviken;Gävleborgs;7
+102719;Söderhamn;Söderhamn;Gävleborgs;7
+102803;Bräcke;Bräcke;Jämtlands;8
+102820;Föllinge;Krokom;Jämtlands;8
+102813;Gäddede;Strömsund;Jämtlands;8
+102811;Hammarstrand;Ragunda;Jämtlands;8
+102801;Hede;Härjedalen;Jämtlands;8
+102808;Storlien;Åre;Jämtlands;8
+102814;Strömsund;Strömsund;Jämtlands;8
+102802;Sveg;Härjedalen;Jämtlands;8
+102821;Svenstavik;Berg;Jämtlands;8
+102819;Tännäs;Härjedalen;Jämtlands;8
+102809;Åre;Åre;Jämtlands;8
+102810;Östersund;Östersund;Jämtlands;8
+102806;Härnösand;Härnösand;Västernorrlands;8
+102815;Junsele;Sollefteå;Västernorrlands;8
+102807;Kramfors;Kramfors;Västernorrlands;8
+102812;Sollefteå;Sollefteå;Västernorrlands;8
+102805;Sundsvall;Sundsvall;Västernorrlands;8
+102822;Timrå;Timrå;Västernorrlands;8
+102804;Ånge;Ånge;Västernorrlands;8
+102816;Örnsköldsvik;Örnsköldsvik;Västernorrlands;8
+102912;Bjurholm;Bjurholm;Västerbottens;9
+102901;Dorotea;Dorotea;Västerbottens;9
+102903;Fredrika;Åsele;Västerbottens;9
+102908;Hemavan;Storuman;Västerbottens;9
+102907;Lycksele;Lycksele;Västerbottens;9
+102915;Malå;Malå;Västerbottens;9
+102916;Nordmaling;Nordmaling;Västerbottens;9
+102914;Norsjö;Norsjö;Västerbottens;9
+102913;Robertsfors;Robertsfors;Västerbottens;9
+102911;Skellefteå;Skellefteå;Västerbottens;9
+102910;Sorsele;Sorsele;Västerbottens;9
+102909;Storuman;Storuman;Västerbottens;9
+102905;Umeå;Umeå;Västerbottens;9
+102902;Vilhelmina;Vilhelmina;Västerbottens;9
+102906;Vindeln;Vindeln;Västerbottens;9
+102904;Vännäs;Vännäs;Västerbottens;9
+102023;Abisko;Kiruna;Norrbottens;10
+102001;Arjeplog;Arjeplog;Norrbottens;10
+102002;Arvidsjaur;Arvidsjaur;Norrbottens;10
+102006;Boden;Boden;Norrbottens;10
+102012;Gällivare;Gällivare;Norrbottens;10
+102010;Haparanda;Haparanda;Norrbottens;10
+102008;Jokkmokk;Jokkmokk;Norrbottens;10
+102017;Kalix;Kalix;Norrbottens;10
+102016;Karesuando;Kiruna;Norrbottens;10
+102014;Kiruna;Kiruna;Norrbottens;10
+102007;Kvikkjokk;Jokkmokk;Norrbottens;10
+102005;Luleå;Luleå;Norrbottens;10
+102013;Pajala;Pajala;Norrbottens;10
+102004;Piteå;Piteå;Norrbottens;10
+102011;Ritsem;Gällivare;Norrbottens;10
+102003;Älvsbyn;Älvsbyn;Norrbottens;10
+102009;Överkalix;Överkalix;Norrbottens;10
+102024;Övertorneå;Övertorneå;Norrbottens;10
