@@ -81,6 +81,8 @@ The possible products are found in the tables below.
 As described in the Basic Information section, all products are not available in the v2 endpoint and this is
 found in the tables.
 
+All the parameters included in each product is explicitly defined in the tables below.
+
 ### SMHI Energy-Index and Heating Degree Days Monthly Values
 This product requires two requests to the API, one for the Energy-Index and one for the Heating Degree Days.
 
@@ -89,6 +91,15 @@ This product requires two requests to the API, one for the Energy-Index and one 
 |MonthlyDD / GDmanad|NO|NO|YES|NO|
 |MonthlyEI / EImanad|NO|NO|YES|NO|
 
+|Product short name|Parameter name|Description|
+|------------------|--------------|-----------|
+|MonthlyEI|EIakt|Actual Energy-Index in equivalent heating degree days|
+|MonthlyEI|EInorm|Normal Energy-Index in equivalent heating degree days|
+|MonthlyDD|GDakt|Actual heating degree days|
+|MonthlyDD|GDnorm|Normal heating degree days|
+|MonthlyDD|TTakt|Actual average temperature|
+|MonthlyDD|TTnorm|Normal average temperature|
+
 ### SMHI Energy-Index and Heating Degree Days Daily Values
 This product requires two requests to the API, one for the Energy-Index and one for the Heating Degree Days.
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
@@ -96,45 +107,102 @@ This product requires two requests to the API, one for the Energy-Index and one 
 |DailyDD / GDdygn|NO|YES|YES|NO|
 |DailyEI / EIdygn|NO|YES|YES|NO|
 
+|Product short name|Parameter name|Description|
+|------------------|--------------|-----------|
+|MonthlyEI|EIakt|Actual Energy-Index in equivalent heating degree days|
+|MonthlyEI|EInorm|Normal Energy-Index in equivalent heating degree days|
+|MonthlyDD|GDakt|Actual heating degree days|
+|MonthlyDD|GDnorm|Normal heating degree days|
+|MonthlyDD|TTakt|Actual average temperature|
+|MonthlyDD|TTnorm|Normal average temperature|
+
 ### SMHI Cooling-Index Monthly Values
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
 |MonthlyKI / KImanad|NO|YES|YES|YES|
+
+|Parameter name|Description|
+|--------------|-----------|
+|KIakt|Actual Cooling-Index in Wh/m²
+|KInorm|Normal Cooling-Index in Wh/m²
+|KIkorr|Correction factor, i.e. KIakt / KInorm
+|KIrekkorr|Recommended correction factor, i.e. KIkorr but constrained to be within reasonable limits
+|TTakt|Actual average temperature
+|TTnorm|Normal average temperature
 
 ### SMHI Cooling-Index Daily Values
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
 |DailyKI / KIdygn|NO|YES|YES|YES|
 
+|Parameter name|Description|
+|--------------|-----------|
+|KIakt|Actual Cooling-Index in Wh/m²
+|KInorm|Normal Cooling-Index in Wh/m²
+|TTakt|Actual average temperature
+|TTnorm|Normal average temperature
+
 ### SMHI Cooling-Index Hourly Values
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
 |HourlyKI / KItimme|NO|YES|NO|YES|
+
+|Parameter name|Description|
+|--------------|-----------|
+|KIakt|Actual Cooling-Index in W/m²
+|TTakt|Actual temperature
 
 ### Mean Temperature Daily Values
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
 |DailyTT / TTdygn|NO|NO|YES|NO|
 
+|Parameter name|Description|
+|--------------|-----------|
+|TTakt|Actual average temperature
+
 ### Temperature Hourly Values
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
 |HourlyTT / TTtimme|NO|NO|NO|NO|
+
+|Parameter name|Description|
+|--------------|-----------|
+|TTakt|Actual temperature
 
 ### SMHI Equivalent Temperature Hourly Values
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
 |ETObs|NO|YES|NO|NO|
 
+|Parameter name|Description|
+|--------------|-----------|
+|ETobs|Equivalent temperature
+|outdoorTemp|Actual temperature
+
 ### SMHI Equivalent Temperature Forecast
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
 |ETProg|YES|YES|NO|NO|
 
+|Parameter name|Description|
+|--------------|-----------|
+|ETprog|Equivalent temperature
+|outdoorTemp|Actual temperature
+|windDirection|Wind direction in degrees. Wind from north -> 0/360 degrees. Wind from east -> 90 degrees.
+|windSpeed|Wind speed at 10m in m/s.
+|cloudiness|Total cloudiness in octas. 0 -> no clouds. 8 -> overcast.
+|globalRadiation|Global irradiance on a horizontal plane in W/m²
+
 ### SMHI Equivalent Temperature Forecast Control
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
 |ETFast|YES|YES|NO|NO|
+
+|Parameter name|Description|
+|--------------|-----------|
+|ETprog|Equivalent temperature
+|outdoorTemp|Actual temperature
 
 ### Available Typecases
 The table below specifies which typecases that are available for the products that requires a typecase.
