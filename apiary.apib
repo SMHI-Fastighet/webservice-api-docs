@@ -88,12 +88,23 @@ This product requires two requests to the API, one for the Energy-Index and one 
 
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
+|MonthlyEIGD / EIGDmanad|NO|YES|YES|YES|
 |MonthlyDD / GDmanad|NO|NO|YES|NO|
 |MonthlyEI / EImanad|NO|NO|YES|NO|
 
 #### Included parameters
 |Product short name|Parameter name|Description|
 |------------------|--------------|-----------|
+|MonthlyEIGD|EIakt|Actual Energy-Index in equivalent heating degree days|
+|MonthlyEIGD|EInorm|Normal Energy-Index in equivalent heating degree days|
+|MonthlyEIGD|EIkorr|Correction factor, i.e. EIakt / EInorm|
+|MonthlyEIGD|EIakt|Recommended correction factor, i.e. EIkorr but constrained to be within reasonable limits|
+|MonthlyEIGD|GDakt|Actual heating degree days|
+|MonthlyEIGD|GDnorm|Normal heating degree days|
+|MonthlyEIGD|GDkorr|Correction factor, i.e. GDakt / GDnorm|
+|MonthlyEIGD|GDakt|Recommended correction factor, i.e. GDkorr but constrained to be within reasonable limits|
+|MonthlyEIGD|TTakt|Actual average temperature|
+|MonthlyEIGD|TTnorm|Normal average temperature|
 |MonthlyEI|EIakt|Actual Energy-Index in equivalent heating degree days|
 |MonthlyEI|EInorm|Normal Energy-Index in equivalent heating degree days|
 |MonthlyDD|GDakt|Actual heating degree days|
@@ -218,6 +229,7 @@ This product requires two requests to the API, one for the Energy-Index and one 
 The table below specifies which typecases that are available for the products that requires a typecase.
 |Product short name|Available typecases|
 |------------------|-------------------|
+|MonthlyEIGD / EIGDmanad|1024|
 |DailyDD / GDdygn|105|
 |DailyEI / EIdygn|105|
 |MonthlyKI / KImanad|1016, 1017, 1018, 1019, 1020|
