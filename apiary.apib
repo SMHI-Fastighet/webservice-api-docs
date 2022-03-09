@@ -89,7 +89,7 @@ If the product MonthlyEIGD is requested, all parameters are included and only 1 
 
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
-|MonthlyEIGD / EIGDmanad|NO|YES|YES|YES|
+|MonthlyEIGD / EIGDmanad|NO|NO|YES|YES|
 |MonthlyDD / GDmanad|NO|NO|YES|NO|
 |MonthlyEI / EImanad|NO|NO|YES|NO|
 
@@ -117,8 +117,8 @@ If the product MonthlyEIGD is requested, all parameters are included and only 1 
 This product requires two requests to the API, one for the Energy-Index and one for the Heating Degree Days.
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
 |------------------|-------------------------|-----------------|---------------------|-----|
-|DailyDD / GDdygn|NO|YES|YES|NO|
-|DailyEI / EIdygn|NO|YES|YES|NO|
+|DailyDD / GDdygn|NO|NO|YES|NO|
+|DailyEI / EIdygn|NO|NO|YES|NO|
 
 #### Included parameters
 |Product short name|Parameter name|Description|
@@ -230,9 +230,6 @@ This product requires two requests to the API, one for the Energy-Index and one 
 The table below specifies which typecases that are available for the products that requires a typecase.
 |Product short name|Available typecases|
 |------------------|-------------------|
-|MonthlyEIGD / EIGDmanad|1024|
-|DailyDD / GDdygn|1117|
-|DailyEI / EIdygn|1024|
 |MonthlyKI / KImanad|1016, 1017, 1018, 1019, 1020|
 |DailyKI / KIdygn|1016, 1017, 1018, 1019, 1020|
 |HourlyKI / KItimme|1016, 1017, 1018, 1019, 1020|
