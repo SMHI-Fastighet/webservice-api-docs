@@ -3,6 +3,8 @@ HOST: https://fastighetsstyrning.smhi.se/ws/v2/enloss
 
 # SMHI Real Estate
 
+**This API is deprecated and has been replaced by https://enlossws.smhi.se. This API is still maintained but new products will not be available here.**
+
 This is the technical documentation of the API provided by SMHI Real Estate for customers to request e.g. energy statistics
 and equivalent temperature forecasts for buildings and properties.
 
@@ -123,12 +125,12 @@ This product requires two requests to the API, one for the Energy-Index and one 
 #### Included parameters
 |Product short name|Parameter name|Description|
 |------------------|--------------|-----------|
-|MonthlyEI|EIakt|Actual Energy-Index in equivalent heating degree days|
-|MonthlyEI|EInorm|Normal Energy-Index in equivalent heating degree days|
-|MonthlyDD|GDakt|Actual heating degree days|
-|MonthlyDD|GDnorm|Normal heating degree days|
-|MonthlyDD|TTakt|Actual average temperature|
-|MonthlyDD|TTnorm|Normal average temperature|
+|DailyEI|EIakt|Actual Energy-Index in equivalent heating degree days|
+|DailyEI|EInorm|Normal Energy-Index in equivalent heating degree days|
+|DailyDD|GDakt|Actual heating degree days|
+|DailyDD|GDnorm|Normal heating degree days|
+|DailyDD|TTakt|Actual average temperature|
+|DailyDD|TTnorm|Normal average temperature|
 
 ### SMHI Cooling-Index Monthly Values
 |Product short name|Requires country code 502|Requires typecase|Has historical values|In v2|
@@ -251,6 +253,10 @@ format 20180215T120000Z.
 
 The date from which a customer is allowed to get data from is regulated by the subscription and there may
 also be a limit to how many times historical requests can be made.
+
+## Test environment
+SMHI has a test environment for the API that is publically available at **https://enlossws-tst.smhi.se/ws/v2/enloss**.
+Contact us if you have a test environment that you wish to connect to our test environment at mailto:fastighet@smhi.se.
 
 ## Returned Body
 Data is returned in json format with both metadata and the values for the product. A response has the format
