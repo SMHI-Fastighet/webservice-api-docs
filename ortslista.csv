@@ -7,7 +7,7 @@ Ortsnummer,Ortsnamn,Kommunnamn,Länsnamn,Region
 102128,Bjuv,Bjuv,Skåne,1
 102130,Broby,Östra Göinge,Skåne,1
 102114,Bromölla,Bromölla,Skåne,1
-102138,Burlöv,Burlöv,Skåne,1
+102138,Arlöv,Burlöv,Skåne,1
 102132,Båstad,Båstad,Skåne,1
 102107,Eslöv,Eslöv,Skåne,1
 102121,Falsterbo,Vellinge,Skåne,1
@@ -44,13 +44,13 @@ Ortsnummer,Ortsnamn,Kommunnamn,Länsnamn,Region
 102301,Laholm,Laholm,Hallands,2
 102231,Ullared,Falkenberg,Hallands,2
 102314,Varberg,Varberg,Hallands,2
-102252,Ale,Ale,Västra Götalands,2
+102252,Nödinge-Nol,Ale,Västra Götalands,2
 102204,Alingsås,Alingsås,Västra Götalands,2
 102223,Bengtsfors,Bengtsfors,Västra Götalands,2
 102243,Bollebygd,Bollebygd,Västra Götalands,2
 102206,Borås,Borås,Västra Götalands,2
 102222,Ed,Dals-Ed,Västra Götalands,2
-102244,Essunga,Essunga,Västra Götalands,2
+102244,Nossebro,Essunga,Västra Götalands,2
 102215,Falköping,Falköping,Västra Götalands,2
 102249,Färgelanda,Färgelanda,Västra Götalands,2
 102248,Grästorp,Grästorp,Västra Götalands,2
@@ -59,31 +59,31 @@ Ortsnummer,Ortsnamn,Kommunnamn,Länsnamn,Region
 102232,Herrljunga,Herrljunga,Västra Götalands,2
 102217,Hjo,Hjo,Västra Götalands,2
 102524,Hova,Gullspång,Västra Götalands,2
-102254,Härryda,Härryda,Västra Götalands,2
+102254,Mölnlycke,Härryda,Västra Götalands,2
 102218,Karlsborg,Karlsborg,Västra Götalands,2
 102205,Kinna,Mark,Västra Götalands,2
 102202,Kungälv,Kungälv,Västra Götalands,2
 102203,Lerum,Lerum,Västra Götalands,2
 102213,Lidköping,Lidköping,Västra Götalands,2
-102253,LillaEdet,Lilla Edet,Västra Götalands,2
+102253,Lilla Edet,Lilla Edet,Västra Götalands,2
 102209,Lysekil,Lysekil,Västra Götalands,2
 102219,Mariestad,Mariestad,Västra Götalands,2
 102220,Mellerud,Mellerud,Västra Götalands,2
 102234,Munkedal,Munkedal,Västra Götalands,2
 102242,Mölndal,Mölndal,Västra Götalands,2
-102240,Orust,Orust,Västra Götalands,2
+102240,Henån,Orust,Västra Götalands,2
 102238,Partille,Partille,Västra Götalands,2
 102214,Skara,Skara,Västra Götalands,2
 102216,Skövde,Skövde,Västra Götalands,2
-102235,Sotenäs,Sotenäs,Västra Götalands,2
+102235,Kungshamn,Sotenäs,Västra Götalands,2
 102208,Stenungsund,Stenungsund,Västra Götalands,2
 102221,Strömstad,Strömstad,Västra Götalands,2
 102245,Svenljunga,Svenljunga,Västra Götalands,2
 102518,Såtenäs,Lidköping,Västra Götalands,2
-102247,Tanum,Tanum,Västra Götalands,2
+102247,Tanumshede,Tanum,Västra Götalands,2
 102241,Tibro,Tibro,Västra Götalands,2
 102251,Tidaholm,Tidaholm,Västra Götalands,2
-102237,Tjörn,Tjörn,Västra Götalands,2
+102237,Skärhamn,Tjörn,Västra Götalands,2
 102250,Tranemo,Tranemo,Västra Götalands,2
 102212,Trollhättan,Trollhättan,Västra Götalands,2
 102239,Töreboda,Töreboda,Västra Götalands,2
@@ -148,7 +148,7 @@ Ortsnummer,Ortsnamn,Kommunnamn,Länsnamn,Region
 102421,Söderköping,Söderköping,Östergötlands,4
 102418,Vadstena,Vadstena,Östergötlands,4
 102405,Valdermarsvik,Valdemarsvik,Östergötlands,4
-102422,Ydre,Ydre,Östergötlands,4
+102422,Österbymo,Ydre,Östergötlands,4
 102404,Åtvidaberg,Åtvidaberg,Östergötlands,4
 102401,Ödeshög,Ödeshög,Östergötlands,4
 102503,Arvika,Arvika,Värmlands,5
@@ -157,7 +157,7 @@ Ortsnummer,Ortsnamn,Kommunnamn,Länsnamn,Region
 102528,Forshaga,Forshaga,Värmlands,5
 102535,Grums,Grums,Värmlands,5
 102506,Hagfors,Hagfors,Värmlands,5
-102525,Hammarö,Hammarö,Värmlands,5
+102525,Skoghall,Hammarö,Värmlands,5
 102507,Karlstad,Karlstad,Värmlands,5
 102520,Kil,Kil,Värmlands,5
 102508,Kristinehamn,Kristinehamn,Värmlands,5
@@ -176,16 +176,16 @@ Ortsnummer,Ortsnamn,Kommunnamn,Länsnamn,Region
 102516,Kopparberg,Ljusnarsberg,Örebro,5
 102513,Kumla,Kumla,Örebro,5
 102511,Laxå,Laxå,Örebro,5
-102529,Lekeberg,Lekeberg,Örebro,5
+102529,Fjugesta,Lekeberg,Örebro,5
 102515,Lindesberg,Lindesberg,Örebro,5
 102533,Nora,Nora,Örebro,5
 102514,Örebro,Örebro,Örebro,5
 102627,Adelsö,Ekerö,Stockholms,6
-102623,Botkyrka,Botkyrka,Stockholms,6
+102623,Tumba,Botkyrka,Stockholms,6
 102646,Danderyd,Danderyd,Stockholms,6
-102610,Haninge,Haninge,Stockholms,6
+102610,Västerhaninge,Haninge,Stockholms,6
 102624,Huddinge,Huddinge,Stockholms,6
-102626,Järfälla,Järfälla,Stockholms,6
+102626,Jakobsberg,Järfälla,Stockholms,6
 102647,Lidingö,Lidingö,Stockholms,6
 102615,Märsta,Sigtuna,Stockholms,6
 102648,Nacka,Nacka,Stockholms,6
@@ -202,15 +202,15 @@ Ortsnummer,Ortsnamn,Kommunnamn,Länsnamn,Region
 102608,Södertälje,Södertälje,Stockholms,6
 102611,Tyresö,Tyresö,Stockholms,6
 102629,Täby,Täby,Stockholms,6
-102607,Upplands-Bro,Upplands-Bro,Stockholms,6
-102639,Upplands-Väsby,Upplands Väsby,Stockholms,6
+102607,Bro,Upplands-Bro,Stockholms,6
+102639,Upplands Väsby,Upplands Väsby,Stockholms,6
 102649,Vallentuna,Vallentuna,Stockholms,6
 102644,Vaxholm,Vaxholm,Stockholms,6
-102625,Värmdö,Värmdö,Stockholms,6
-102614,Österåker,Österåker,Stockholms,6
+102625,Gustavsberg,Värmdö,Stockholms,6
+102614,Åkersberga,Österåker,Stockholms,6
 102606,Enköping,Enköping,Uppsala,6
 102631,Films Kyrkby,Östhammar,Uppsala,6
-102637,Håbo,Håbo,Uppsala,6
+102637,Bålsta,Håbo,Uppsala,6
 102638,Knivsta,Knivsta,Uppsala,6
 102630,Skutskär,Älvkarleby,Uppsala,6
 102619,Tierp,Tierp,Uppsala,6
@@ -230,7 +230,7 @@ Ortsnummer,Ortsnamn,Kommunnamn,Länsnamn,Region
 102702,Avesta,Avesta,Dalarnas,7
 102707,Borlänge,Borlänge,Dalarnas,7
 102708,Falun,Falun,Dalarnas,7
-102725,Gagnef,Gagnef,Dalarnas,7
+102725,Djurås,Gagnef,Dalarnas,7
 102722,Hedemora,Hedemora,Dalarnas,7
 102706,Leksand,Leksand,Dalarnas,7
 102701,Ludvika,Ludvika,Dalarnas,7
@@ -251,7 +251,7 @@ Ortsnummer,Ortsnamn,Kommunnamn,Länsnamn,Region
 102709,Hofors,Hofors,Gävleborgs,7
 102720,Hudiksvall,Hudiksvall,Gävleborgs,7
 102721,Ljusdal,Ljusdal,Gävleborgs,7
-102728,Nordanstig,Nordanstig,Gävleborgs,7
+102728,Bergsjö,Nordanstig,Gävleborgs,7
 102712,Ockelbo,Ockelbo,Gävleborgs,7
 102710,Sandviken,Sandviken,Gävleborgs,7
 102719,Söderhamn,Söderhamn,Gävleborgs,7
